@@ -1,4 +1,4 @@
-package xtools
+package tools
 
 func Max(data ...int) int {
 	max := 0

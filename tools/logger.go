@@ -1,4 +1,4 @@
-package xtools
+package tools
 
 import (
 	"github.com/astaxie/beego/logs"

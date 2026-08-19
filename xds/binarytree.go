@@ -2,7 +2,7 @@ package xds
 
 import (
 	fmt "fmt"
-	"github.com/arcnadiven/atalanta/xtools"
+	"github.com/arcnadiven/go-tools/tools"
 )
 
 type TreeNode struct {
@@ -38,7 +38,7 @@ func (root *TreeNode) AddRightNode(val int) {
 }
 
 func GetMaxNodeNum(col int) int {
-	return xtools.Pow(2, col) - 1
+	return tools.Pow(2, col) - 1
 }
 
 func GetBinaryTreeDepth(nodeNum int) int {
@@ -51,7 +51,7 @@ func GetBinaryTreeDepth(nodeNum int) int {
 	}
 }
 
-//LeetCode用，levelOrder序列化，节点缺失时使用null代替
+// LeetCode用，levelOrder序列化，节点缺失时使用null代替
 func MarshalBinaryTree(src []interface{}) *TreeNode {
 	if len(src) == 0 {
 		return nil
@@ -114,7 +114,7 @@ func MarshalBinaryTree(src []interface{}) *TreeNode {
 	return root
 }
 
-//自动填充null
+// 自动填充null
 func LevelOrder(root *TreeNode) []interface{} {
 	result := []interface{}{}
 	if root == nil {

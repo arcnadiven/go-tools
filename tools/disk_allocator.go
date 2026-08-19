@@ -1,4 +1,4 @@
-package xtools
+package tools
 
 const (
 	baseStr    = "abcdefghijklmnopqrstuvwxyz"

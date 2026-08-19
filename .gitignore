@@ -15,5 +15,4 @@
 # vendor/
 .idea/
 
-practice/
-xpd/
+.DS_Store

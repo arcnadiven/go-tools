@@ -1,4 +1,4 @@
-package xtools
+package xds
 
 import (
 	"encoding/json"
@@ -7,7 +7,7 @@ import (
 	"io"
 )
 
-//用于处理岛屿类题目中的测试case转换为可用结构
+// 用于处理岛屿类题目中的测试case转换为可用结构
 func MarshalBytesMatrix(str string) ([][]byte, error) {
 	data := [][]string{}
 	if err := json.Unmarshal([]byte(str), &data); err != nil {
@@ -27,7 +27,7 @@ func MarshalBytesMatrix(str string) ([][]byte, error) {
 	return result, nil
 }
 
-//用于牛客的数列类题目的输入输出
+// 用于牛客的数列类题目的输入输出
 func MarshalIntSlice() ([]int, error) {
 	result := []int{}
 	for {
